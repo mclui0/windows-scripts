@@ -52,6 +52,7 @@ echo  ^> ^^ ^<
 echo Cat: Checking if winget is available...
 echo If stuck, press any key to continue...
 powershell -Command "if (-not (Get-Command winget -ErrorAction SilentlyContinue)) { Write-Output 'winget not found. Installing App Installer from Microsoft Store...'; Start-Process 'ms-windows-store://pdp/?productid=9NBLGGH4NNS1'; Write-Output 'Please install ''App Installer'' manually from the Store, then re-run this script.'; Pause; Exit 1 }" > nul 2>&1
+echo.
 
 :: Uncomment the following lines if you want to enable WSL and install Ubuntu
 :: powershell -Command "dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart" > nul 2>&1
@@ -65,37 +66,38 @@ echo  /\_/\
 echo ( o.o ) 
 echo  ^> ^^ ^<
 echo Cat: Installing Git...
-:: powershell -Command "winget install -e --id Git.Git" > nul 2>&1
+powershell -Command "winget install -e --id Git.Git" > nul 2>&1
 echo Cat: Installing Visual Studio Code...
-:: powershell -Command "winget install -e --id Microsoft.VisualStudioCode" > nul 2>&1
+powershell -Command "winget install -e --id Microsoft.VisualStudioCode" > nul 2>&1
 echo Cat: Installing Windows Terminal...
-:: powershell -Command "winget install -e --id Microsoft.WindowsTerminal" > nul 2>&1
+powershell -Command "winget install -e --id Microsoft.WindowsTerminal" > nul 2>&1
 echo Cat: Installing Python 3.11...
-:: powershell -Command "winget install -e --id Python.Python.3.11" > nul 2>&1
+powershell -Command "winget install -e --id Python.Python.3.11" > nul 2>&1
 echo Cat: Installing Steam...
-:: powershell -Command "winget install -e --id Valve.Steam" > nul 2>&1
+powershell -Command "winget install -e --id Valve.Steam" > nul 2>&1
 echo Cat: Installing PowerToys...
-:: powershell -Command "winget install -e --id Microsoft.PowerToys" > nul 2>&1
+powershell -Command "winget install -e --id Microsoft.PowerToys" > nul 2>&1
 echo Cat: Installing Rainmeter...
-:: powershell -Command "winget install -e --id Rainmeter.Rainmeter" > nul 2>&1
+powershell -Command "winget install -e --id Rainmeter.Rainmeter" > nul 2>&1
 echo Cat: Installing Obsidian...
-:: powershell -Command "winget install -e --id Obsidian.Obsidian" > nul 2>&1
+powershell -Command "winget install -e --id Obsidian.Obsidian" > nul 2>&1
 echo Cat: Installing WinSCP...
-:: powershell -Command "winget install -e --id WinSCP.WinSCP" > nul 2>&1
+powershell -Command "winget install -e --id WinSCP.WinSCP" > nul 2>&1
 echo Cat: Installing WizTree...
-:: powershell -Command "winget install -e --id AntibodySoftware.WizTree" > nul 2>&1
+powershell -Command "winget install -e --id AntibodySoftware.WizTree" > nul 2>&1
 echo Cat: Installing HWiNFO...
-:: powershell -Command "winget install -e --id REALiX.HWiNFO" > nul 2>&1
+powershell -Command "winget install -e --id REALiX.HWiNFO" > nul 2>&1
 echo Cat: Installing Everything Toolbar...
-:: powershell -Command "winget install -e --id stnkl.EverythingToolbar" > nul 2>&1
+powershell -Command "winget install -e --id stnkl.EverythingToolbar" > nul 2>&1
 echo Cat: Installing Everything...
-:: powershell -Command "winget install -e --id voidtools.Everything" > nul 2>&1
+powershell -Command "winget install -e --id voidtools.Everything" > nul 2>&1
 echo Cat: Installing GlassWire...
-:: powershell -Command "winget install -e --id GlassWire.GlassWire" > nul 2>&1
+powershell -Command "winget install -e --id GlassWire.GlassWire" > nul 2>&1
 echo Cat: Installing Krita...
-:: powershell -Command "winget install -e --id KDE.Krita" > nul 2>&1
+powershell -Command "winget install -e --id KDE.Krita" > nul 2>&1
 echo Cat: Installing PeaZip...
-:: powershell -Command "winget install -e --id Giorgiotani.Peazip" > nul 2>&1
+powershell -Command "winget install -e --id Giorgiotani.Peazip" > nul 2>&1
+echo.
 
 :: Open webpages in the default browser
 echo  /\_/\  
@@ -105,6 +107,7 @@ echo Cat: Opening webpages...
 start "" "https://github.com/SpotX-Official/SpotX/releases"
 start "" "https://spicetify.app/docs/getting-started/"
 start "" "https://vencord.dev/"
+echo.
 
 :: Finish 
 echo  /\_/\  

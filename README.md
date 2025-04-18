@@ -5,4 +5,4 @@ Disclaimer: these scripts were designed for personal use only. I do not claim an
 - "help my pc is shitting itself.bat" - Batch script to clean and optimize and existing Windows install
 - "setup.bat" - Batch script to expedite the installation of basic programs and utilities 
 
-Additionally, you will be guided by a friendly cat throughout the process of running these scripts. Please inspect the files for additional details.
+Additionally, you will be guided by a friendly cat throughout the process of running these scripts. Please inspect the files for additional details. Note that scripts need to be Run as Administrator to work properly.
